@@ -1,0 +1,26 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BasicLogic\Map\MapObjectComponents\MOCInRadius.cs">
+    <Files>
+      <File FileName="Assets\BasicLogic\Tier.cs" Line="142" Column="26" />
+      <File FileName="Assets\BasicLogic\Map\Map.cs" Line="41" Column="42" />
+      <File FileName="Assets\BasicLogic\Map\GridMap.cs" Line="173" Column="6" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectActions\Requirements\ARResourceCost.cs" Line="73" Column="146" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectActions\Requirements\ARCountInstances.cs" Line="26" Column="6" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectActions\Requirements\ARUpgradeLimiter.cs" Line="14" Column="6" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectActions\Requirements\MOARWithinRadius.cs" Line="17" Column="65" />
+      <File FileName="Assets\BasicLogic\Research.cs" Line="179" Column="27" />
+      <File FileName="Assets\BasicLogic\ResearchManager.cs" Line="104" Column="40" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectComponents\MOCIncome.cs" Line="8" Column="40" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectComponents\MapObjectComponent.cs" Line="29" Column="21" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectComponents\MOCRIncreaseIncome.cs" Line="24" Column="26" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectComponents\MOCInRadius.cs" Line="50" Column="44" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectActions\Requirements\ARResearched.cs" Line="8" Column="40" />
+      <File FileName="Assets\BasicLogic\Map\MapObjectInstance.cs" Line="104" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

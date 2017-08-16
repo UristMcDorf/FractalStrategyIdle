@@ -1,0 +1,15 @@
+Mountain;Mountain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Water;Water
+Mountain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Water
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Water
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain:Hub;Plain;Plain;Plain;Plain;Plain;Plain;Plain
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain
+Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain
+Plain;Water;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Forest;Plain;Plain
+Water;Water;Water;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Plain;Forest;Plain
+Water;Water;Water;Plain;Plain;Plain;Plain;Forest;Plain;Forest;Forest;Plain;Forest;Forest;Plain
+Water;Water;Water;Water;Plain;Plain;Plain;Plain;Forest;Forest;Forest;Forest;Forest;Forest;Forest
+Water;Forest;Water;Water;Plain;Plain;Plain;Plain;Plain;Forest;Forest;Forest;Forest;Forest;Forest
