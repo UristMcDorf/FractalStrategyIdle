@@ -83,7 +83,7 @@ public class Tier : FSIEntity
 
         map = Instantiate<Map>(map);
 
-        map.transform.SetParent(UIManager.Instance.MapView.transform, false);
+        map.transform.SetParent(UIManager.Instance.GetTab("Map").transform, false);
         map.GenerateMap();
     }
 

@@ -29,23 +29,12 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    [SerializeField]
-    CanvasGroup _mapView = null;
-    public CanvasGroup MapView //TODO: remove
+    Dictionary <string, CanvasGroup> _tabs = new Dictionary<string, CanvasGroup>();
+    Dictionary <string, CanvasGroup> Tabs
     {
         get
         {
-            return _mapView;
-        }
-    }
-
-    [SerializeField]
-    CanvasGroup _researchView = null;
-    public CanvasGroup ResearchView
-    {
-        get
-        {
-            return _researchView;
+            return _tabs;
         }
     }
 
@@ -130,7 +119,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        SwitchTo(0);
+        SwitchTo("Map");
     }
 
     void UpdateSelected(MapObjectInstance instance)
@@ -202,19 +191,20 @@ public class UIManager : MonoBehaviour
     }
 
     //TODO: less hardcoded
-    public void SwitchTo(int index)
+    public void SwitchTo(string index)
     {
-        Hide(MapView);
-        Hide(ResearchView);
-
-        switch(index)
+        foreach (CanvasGroup value in Tabs.Values)
         {
-        case 0:
-            Show(MapView);
-            break;
-        case 1:
-            Show(ResearchView);
-            break;
+            Hide(value);
+        }
+
+        if (Tabs.ContainsKey(index))
+        {
+            Show(Tabs[index]);
+        }
+        else
+        {
+            ErrorNotRegisteredTabIndex(index);
         }
     }
 
@@ -234,5 +224,28 @@ public class UIManager : MonoBehaviour
 
         canvasGroup.interactable = state;
         canvasGroup.blocksRaycasts = state;
+    }
+
+    public void RegisterTab(string index, CanvasGroup group)
+    {
+        if(Tabs.ContainsKey(index))
+            Debug.LogError(string.Format("UIManager already has registration for tab index \"{0}\", {1} could not be registered.", index, group.gameObject));
+        else
+            _tabs.Add(index, group);
+    }
+
+    public CanvasGroup GetTab(string index)
+    {
+        CanvasGroup tab = null;
+
+        if(!Tabs.TryGetValue(index, out tab))
+            ErrorNotRegisteredTabIndex(index);
+
+        return tab;
+    }
+
+    protected void ErrorNotRegisteredTabIndex(string index)
+    {
+        Debug.LogError(string.Format("{0} is not registered as a UI tab index.", index));
     }
 }

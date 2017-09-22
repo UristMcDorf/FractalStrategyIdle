@@ -54,7 +54,7 @@ public class ResearchManager : MonoBehaviour
             ResearchPanel newPanel = ResearchPanel.MakePanel(research);
 
             researchPanels.Add(instance.SysName, newPanel);
-            newPanel.transform.SetParent(UIManager.Instance.ResearchView.transform, false);
+            newPanel.transform.SetParent(UIManager.Instance.GetTab("Research").transform, false);
 
             instance.CompleteActionImageLink.transform.SetParent(newPanel.ActionAnchor.transform, false);
             if (instance.UpgradeActionImageLink != null)
