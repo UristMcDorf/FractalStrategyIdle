@@ -10,7 +10,7 @@ public class UITab : MonoBehaviour
     [SerializeField]
     private string id = "";
 
-    public void Start()
+    public void Awake()
     {
         UIManager.Instance.RegisterTab(id, GetComponent<CanvasGroup>());
     }
