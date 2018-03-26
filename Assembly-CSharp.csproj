@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BasicLogic\DebugFunctions\Debug_ChangeGameSpeed.cs" />
      <Compile Include="Assets\BasicLogic\DebugFunctions\Debug_GainResource.cs" />
      <Compile Include="Assets\BasicLogic\EventManager.cs" />
      <Compile Include="Assets\BasicLogic\FSIEntity.cs" />

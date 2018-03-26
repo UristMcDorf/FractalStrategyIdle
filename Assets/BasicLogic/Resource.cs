@@ -117,7 +117,7 @@ public class Resource : FSIEntity
 
     void UpdateText()
     {
-        text.text = displayName + ": " + FSIUtility.NumberToString(Amount) + "\n+" + FSIUtility.NumberToString(Income, 1) + "/second";
+        text.text = displayName + ": " + FSIUtility.NumberToString(Amount) + "\n+" + FSIUtility.NumberToString(Income/* / GameManager.Instance.GameSpeed*/, 1) + "/second";
     }
 
     void SetupDisplay()

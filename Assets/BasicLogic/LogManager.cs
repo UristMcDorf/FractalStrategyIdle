@@ -26,6 +26,7 @@ public class LogManager : MonoBehaviour
         EventManager.Instance.AddListener<MapObjectDestroyedEvent>(OnImprovementDestroyed);
         EventManager.Instance.AddListener<ResearchCompletedEvent>(OnResearched);
         EventManager.Instance.AddListener<ResearchUpgradedEvent>(OnResearchUpgraded);
+        EventManager.Instance.AddListener<DebugFunctionUsedEvent>(OnDebugFunctionUsed);
     }
 
     void OnDisable()
@@ -36,6 +37,7 @@ public class LogManager : MonoBehaviour
             EventManager.Instance.RemoveListener<MapObjectDestroyedEvent>(OnImprovementDestroyed);
             EventManager.Instance.RemoveListener<ResearchCompletedEvent>(OnResearched);
             EventManager.Instance.RemoveListener<ResearchUpgradedEvent>(OnResearchUpgraded);
+            EventManager.Instance.RemoveListener<DebugFunctionUsedEvent>(OnDebugFunctionUsed);
         }
     }
 
@@ -59,6 +61,11 @@ public class LogManager : MonoBehaviour
     void OnResearchUpgraded(ResearchUpgradedEvent eventInst)
     {
         WriteMessage(string.Format("Research \"{0}\" upgraded to level {1}.", eventInst.research.ToString(), eventInst.newLevel));
+    }
+
+    void OnDebugFunctionUsed(DebugFunctionUsedEvent eventInst)
+    {
+        WriteMessage(string.Format("DEBUG: {0}", eventInst.text));
     }
 
     void WriteMessage(string text)

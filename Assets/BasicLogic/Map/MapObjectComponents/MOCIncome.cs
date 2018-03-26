@@ -29,7 +29,7 @@ public class MOCIncome : MapObjectComponent
 
     public double CalculateIncome(MapObjectInstance instance, double deltaTime)
     {
-        double amount = amountPerSecond * System.Math.Pow(levelModifier, instance.Level) * deltaTime;
+        double amount = amountPerSecond * System.Math.Pow(levelModifier, instance.Level) * deltaTime * GameManager.Instance.GameSpeed;
 
         foreach (MapObjectInstance affector in instance.Affecting)
             foreach (MOCRIncreaseIncome mocrIncome in affector.Parent.GetComponents<MOCRIncreaseIncome>())

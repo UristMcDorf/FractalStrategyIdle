@@ -127,3 +127,13 @@ public class ResearchUpgradedEvent : GameEvent
         this.newLevel = newLevel;
     }
 }
+
+public class DebugFunctionUsedEvent : GameEvent
+{
+    public string text;
+
+    public DebugFunctionUsedEvent(string text)
+    {
+        this.text = text;
+    }
+}
