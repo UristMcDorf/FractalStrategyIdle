@@ -52,7 +52,8 @@ public class MapObjectInstance : MonoBehaviour, IPointerDownHandler, ILeveled
         if (UIManager.Instance.CurrentlySelected == this)
             UIManager.Instance.SaveHighlighter(); //TODO: less hacky
 
-        EventManager.Instance.QueueEvent(new MapObjectDestroyedEvent(this));
+        if (EventManager.Instance != null)
+            EventManager.Instance.QueueEvent(new MapObjectDestroyedEvent(this));
     }
 
     public void OnEnable()
